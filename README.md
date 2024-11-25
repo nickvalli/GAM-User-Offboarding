@@ -8,7 +8,8 @@ GAMADV-XTD3 & GYB installed with the correct APIs enabled
     https://github.com/taers232c/GAMADV-XTD3
     https://github.com/GAM-team/got-your-back
 
-Enabled APIs:
+Enabled APIs
+
 drive.googleapis.com
 gmail.googleapis.com
 admin.googleapis.com
