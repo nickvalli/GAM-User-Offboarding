@@ -49,11 +49,11 @@ if ($confirmRemoveGroups -eq "y" -or $confirmRemoveGroups -eq "Y") {
 
 # Backup user email using GYB
 Write-Host "Backing up emails for $userEmail to admin..."
-gyb --email $userEmail --service-account --local-folder "H:\My Drive\Ex-Employee Email Backups\$userEmail"
+gyb --email $userEmail --service-account --local-folder "C:\<Folder>\<Ex-Employee Email Backups>\$userEmail"
 
 # Transfer user's Google Drive using GAM
 Write-Host "Transferring user's Google Drive..."
-gam user $userEmail transfer drive admin@tripadeal.com.au 
+gam user $userEmail transfer drive <Desinated email address> 
 
 # Prompt deletion of user 
 $confirmDeleteUser = Read-Host "Do you wish to delete this user? (y/n)"
