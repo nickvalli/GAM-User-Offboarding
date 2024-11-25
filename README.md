@@ -1,6 +1,6 @@
 # GAM-User-Offboarding
 
-This script offboards & backups Gmail and Google Drive to a designated Gmail address 
+A simple script that offboards, backups Gmail and Google Drive to a designated Workspace address 
 
 Prerequisites:
 GAMADV-XTD3 & GYB installed with the correct APIs enabled
