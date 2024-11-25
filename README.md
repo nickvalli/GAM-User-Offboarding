@@ -11,11 +11,8 @@ GAMADV-XTD3 & GYB installed with the correct APIs enabled
 Enabled APIs
 
 drive.googleapis.com
-
 gmail.googleapis.com
-
 admin.googleapis.com
-
 calendar-json.googleapis.com
 
 
