@@ -10,10 +10,10 @@ GAMADV-XTD3 & GYB installed with the correct APIs enabled
 
 Enabled APIs
 
-drive.googleapis.com
-gmail.googleapis.com
-admin.googleapis.com
-calendar-json.googleapis.com
+- drive.googleapis.com
+- gmail.googleapis.com
+- admin.googleapis.com
+- calendar-json.googleapis.com
 
 
 Change the destination file location to your desired location for gyb backups. 
