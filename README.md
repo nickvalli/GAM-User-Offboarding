@@ -16,4 +16,4 @@ Enabled APIs:
 
 
 Change the destination file location to your desired location for gyb backups. 
-You can change the domain field in the config file of GAM so you can just input the users name instead. Although this might not work for the gyb commands. 
+You can change the domain field in the GAM config file to input the user's name instead of username + domain, although this might not work for the gyb commands. 
