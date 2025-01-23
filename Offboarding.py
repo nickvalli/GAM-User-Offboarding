@@ -6,7 +6,7 @@ import time
 input_user = input("Enter email address of user to be offboarded: ")
 
 try:
-    # Run GAM command to print the users
+    # Run GAM command to print users
     list_users = subprocess.run(
         ['gam', 'print', 'users'],
         capture_output=True,
@@ -14,22 +14,22 @@ try:
         check=True,
     )
     
-    output = list_users.stdout  # Capture output of the GAM command
+    output = list_users.stdout  # Capture output of GAM command
 
-    # Collect all matching users
+    # Collect all matching users within your domain
     matching_users = [line for line in output.splitlines() if input_user in line]
 
     if matching_users:
         print(f"Found {len(matching_users)} user(s) matching '{input_user}':")
         
-        # Display the matching users
+        # Display matching users
         for idx, user in enumerate(matching_users, 1):
             print(f"{idx}. {user}")
 
-        # Ask the user to choose which account to offboard
+        # Ask user to choose which account to offboard
         user_choice = input(f"Please choose the user number (1-{len(matching_users)}): ")
 
-        # Validate user choice
+        # Confirmation ofu ser choice
         try:
             user_choice = int(user_choice)
             if 1 <= user_choice <= len(matching_users):
@@ -48,7 +48,7 @@ try:
         sys.exit(1)  # Exit the script if no user is found
 
 except subprocess.CalledProcessError as e:
-    # Handle the case when the GAM command fails
+    # Handle the case when GAM command fails
     print(f"Error running the GAM command: {e}")
     sys.exit(1)
 
@@ -103,7 +103,7 @@ class Session:
             
 
 session = Session(selected_user)  # Create a Session instance for a user
-session.Tokens_Passwords()  # Call the method to reset tokens and password
+session.Tokens_Passwords()
 
 
 def remove_groups(selected_user):
