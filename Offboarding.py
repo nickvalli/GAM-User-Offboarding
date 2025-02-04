@@ -146,7 +146,7 @@ def Ownership(selected_user):
     else:
         try:
             print(f"Transferring {selected_user}'s files to admin account...")
-            subprocess.run(["gam", "user", selected_user, "transfer", "drive", "], check=True)
+            subprocess.run(["gam", "user", selected_user, "transfer", "drive"], check=True)
         except subprocess.CalledProcessError as e:
             print(f"Failed to transfer {selected_user}'s Drive files to youremailhere@email.com: {e}")
 
