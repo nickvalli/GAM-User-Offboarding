@@ -15,7 +15,8 @@ Enabled APIs:
 - calendar-json.googleapis.com
 
 
-Change the destination file locations to your desired location for Gmail backups and ownership transfers
+Change the destination file locations to your desired location for Gmail backups and ownership transfers.
+
 You can change the domain field in the GAM config file to input the user's name instead of username + domain, although this might not work for the gyb commands.
 
 Also written in Powershell but no longer working on it.
